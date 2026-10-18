@@ -8,8 +8,10 @@
 - 결과: <data>/packs/<id>.<ext>.gz + <data>/manifest.json
 - 내용이 바뀐 꾸러미만 버전이 오른다(YYYY.MM.DD-N). 안 바뀐 건 이전 버전 그대로.
 - 큰 파일(Release에 올릴 것)은 packs.json에 url을 적으면 manifest에 그 주소가 들어간다(gz 파일은 직접 올리기).
+- manifest.json을 서명 키(ECDSA P-256)로 서명해 manifest.sig를 만든다. 앱은 서명이 맞는 manifest만 쓴다.
+  키: --key 또는 환경 변수 KDICT_SIGN_KEY, 없으면 ~/.kdict-keys/data_sign_ec.pem 또는 /home/claude/.kdict-keys/data_sign_ec.pem. 키는 저장소에 올리지 말 것.
 """
-import argparse, datetime, gzip, hashlib, json, os, shutil, sys
+import argparse, base64, datetime, gzip, hashlib, json, os, shutil, sys
 
 APP_ASSETS = {
     'dictation_g1': 'play/dictation_g1.jsonl', 'dictation_g2': 'play/dictation_g2.jsonl', 'dictation_g3': 'play/dictation_g3.jsonl',
@@ -49,7 +51,11 @@ def main():
     ap.add_argument('data')
     ap.add_argument('--init-from-app')
     ap.add_argument('--min-app', type=int, default=None)
+    keys = [os.environ.get('KDICT_SIGN_KEY'), os.path.expanduser('~/.kdict-keys/data_sign_ec.pem'), '/home/claude/.kdict-keys/data_sign_ec.pem']
+    ap.add_argument('--key', default=next((k for k in keys if k and os.path.exists(k)), keys[1]))
     a = ap.parse_args()
+    if not os.path.exists(a.key):
+        sys.exit(f'서명 키가 없어요: {a.key}\n  앱은 서명이 맞는 manifest만 받으므로, 키 없이 만들면 휴대폰이 새 자료를 받지 않아요.')
     src = os.path.join(a.data, 'src'); out = os.path.join(a.data, 'packs')
     os.makedirs(src, exist_ok=True); os.makedirs(out, exist_ok=True)
     if a.init_from_app:
@@ -113,7 +119,20 @@ def main():
     with open(mpath, 'w', encoding='utf-8') as f:
         json.dump(man, f, ensure_ascii=False, indent=1)
         f.write('\n')
-    print('manifest.json 저장:', len(packs), '개')
+    sign(mpath, a.key)
+    print('manifest.json 저장:', len(packs), '개 · manifest.sig 서명함')
+
+
+def sign(mpath, key_path):
+    """manifest.json 바이트 그대로를 SHA256withECDSA로 서명 → manifest.sig(base64 DER)"""
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import ec
+    key = serialization.load_pem_private_key(open(key_path, 'rb').read(), password=None)
+    raw = open(mpath, 'rb').read()
+    sig = key.sign(raw, ec.ECDSA(hashes.SHA256()))
+    key.public_key().verify(sig, raw, ec.ECDSA(hashes.SHA256()))
+    with open(os.path.join(os.path.dirname(mpath), 'manifest.sig'), 'w', encoding='ascii') as f:
+        f.write(base64.b64encode(sig).decode() + '\n')
 
 
 if __name__ == '__main__':

@@ -1,31 +1,31 @@
 {
  "schema": 1,
- "generated": "2026-10-19T06:19:34+09:00",
+ "generated": "2026-10-19T07:01:41+09:00",
  "min_app": 1,
  "packs": [
   {
    "id": "confusables",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/confusables.jsonl.gz",
-   "sha256": "e0d41ed8b7e4fb501131732ec1656ee9b0d10c7071063ad691fd9f9f4aa599af",
-   "size": 24286,
+   "sha256": "198c50436f4871fb744b5dac8f562c9d8e64045eb863d867fae1af46110c1d3d",
+   "size": 24457,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "헷갈리는 말",
-   "content_sha256": "2553d78a0ce8a4228dfb5f1b69b867941a34dc0cd258f385ae8d7abfa81dd8bf"
+   "content_sha256": "f8adbc85aa9d66592cacf2924469818bcf4f10aaef84fc78d53f5e2e89d1ce12"
   },
   {
    "id": "dictation_g1",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/dictation_g1.jsonl.gz",
-   "sha256": "dea3c0436714f225c46d9d2268213f1bfb8bb9c4988992231fb934e866cd1774",
-   "size": 4696,
+   "sha256": "4683abf9122ddb78bbeb723e0ecedc581200a6dca3fc92ec55ef934acea359af",
+   "size": 4737,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 1학년",
-   "content_sha256": "c1686b630c88bf773ace331738cbbdf47a108d3cb5a66e856c7f1002004c2af9"
+   "content_sha256": "153873a993b06087d3b87721e6fc92754411ab514955a723f91c73ced3081894"
   },
   {
    "id": "dictation_g2",
@@ -41,51 +41,51 @@
   },
   {
    "id": "dictation_g3",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/dictation_g3.jsonl.gz",
-   "sha256": "a35779c44e12acf81f8bafb58bbad1d39c2aec1e523c75d7ecd2e01cb519b394",
-   "size": 7447,
+   "sha256": "9782c9e2524cc2d275c05a8e757ad2528bc83430648fa349e21e577f800fd873",
+   "size": 7444,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 3학년",
-   "content_sha256": "92798e77f08a22a20a42852b35a1af2d0d4969f66736003df69f09bb294b4067"
+   "content_sha256": "b1ea7cdab11a64893f08c782a3708ec8d8ea28046f6b9fed95e9afaeae7e57fe"
   },
   {
    "id": "dictation_g4",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/dictation_g4.jsonl.gz",
-   "sha256": "7f0f279f264eac11269aa2e8f50b95447b119b12bfce178f2bd43b4032f64d25",
-   "size": 7033,
+   "sha256": "c789aa15219e4b192f7acec6109a02010f3e5d6d87548c11309bc0de436c30a1",
+   "size": 7314,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 4학년",
-   "content_sha256": "dc235b7740d99fec5f80a21e5378aa78d248ee93cacee29510e983b52a282f97"
+   "content_sha256": "1154206c134e89b55cf4321ca4af117bb1758e19ba1b532ef56ccc4c4c823d7b"
   },
   {
    "id": "dictation_g5",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/dictation_g5.jsonl.gz",
-   "sha256": "27786ba6ac301a1973b331f1ce6a6634aa6acb988e394ac65bc5c639df46e31b",
-   "size": 8903,
+   "sha256": "877641fd1da8f10d8d1eb45e4eac9188d6b2e8be06f1ed3311b788ca222f87ff",
+   "size": 9118,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 5학년",
-   "content_sha256": "4a5ef5643a5faaa32db73b01d349d15b4da99cdae29d08f3d50eb5a66871db1c"
+   "content_sha256": "b82daed3cb199d2be5c873209944348b4832c4baf0ba79ca6ec9235f0756fc6a"
   },
   {
    "id": "dictation_g6",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/dictation_g6.jsonl.gz",
-   "sha256": "fadc8662a3901f88174d135d6ced12292eb43b51ab11a0543fd0772c5effc718",
-   "size": 9626,
+   "sha256": "7f1e75236dc71eca9c3d1600ec901d58b0986c009f53f14f115be6d5655c7e46",
+   "size": 9814,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 6학년",
-   "content_sha256": "ef83ec441509e6307f3125a7e8656902256634aff28a9a9447379b8f3a87d2c5"
+   "content_sha256": "4a56a3569c23cf0916fa33f5cc13462f2324f19c9986a5897f751809b46a15e2"
   },
   {
    "id": "features",
@@ -101,15 +101,15 @@
   },
   {
    "id": "hanja",
-   "version": "0",
+   "version": "2026.10.19-1",
    "url": "packs/hanja.json.gz",
-   "sha256": "b36c399324c65245abdf2de8c02be1ed43d01892020f545e668b11f6d4df241e",
-   "size": 2352005,
+   "sha256": "df7a6deb0d3804bdbdb3c862af56a95036cb919b666d240a819bc1b8dc9ed46f",
+   "size": 2352041,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "한자 사전",
-   "content_sha256": "b3adb529189638b88d84d398102a6a923bf5878270aea400e775a426d97ba8a3"
+   "content_sha256": "8210047603a52f6d43366dd15a6ad8ef12f9583d1f17959433885a8c94498176"
   },
   {
    "id": "hide_examples",
