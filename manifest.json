@@ -1,0 +1,151 @@
+{
+ "schema": 1,
+ "generated": "2026-10-19T06:19:34+09:00",
+ "min_app": 1,
+ "packs": [
+  {
+   "id": "confusables",
+   "version": "0",
+   "url": "packs/confusables.jsonl.gz",
+   "sha256": "e0d41ed8b7e4fb501131732ec1656ee9b0d10c7071063ad691fd9f9f4aa599af",
+   "size": 24286,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "헷갈리는 말",
+   "content_sha256": "2553d78a0ce8a4228dfb5f1b69b867941a34dc0cd258f385ae8d7abfa81dd8bf"
+  },
+  {
+   "id": "dictation_g1",
+   "version": "0",
+   "url": "packs/dictation_g1.jsonl.gz",
+   "sha256": "dea3c0436714f225c46d9d2268213f1bfb8bb9c4988992231fb934e866cd1774",
+   "size": 4696,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "받아쓰기 1학년",
+   "content_sha256": "c1686b630c88bf773ace331738cbbdf47a108d3cb5a66e856c7f1002004c2af9"
+  },
+  {
+   "id": "dictation_g2",
+   "version": "0",
+   "url": "packs/dictation_g2.jsonl.gz",
+   "sha256": "bb86d1d063cc71f6efaf53c544553ef601287b6a69e67223222982f87ab216d3",
+   "size": 5111,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "받아쓰기 2학년",
+   "content_sha256": "5e07e49095de9e74f931118db899dc422fcb4a7447578efde5fbea6ae1242bb2"
+  },
+  {
+   "id": "dictation_g3",
+   "version": "0",
+   "url": "packs/dictation_g3.jsonl.gz",
+   "sha256": "a35779c44e12acf81f8bafb58bbad1d39c2aec1e523c75d7ecd2e01cb519b394",
+   "size": 7447,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "받아쓰기 3학년",
+   "content_sha256": "92798e77f08a22a20a42852b35a1af2d0d4969f66736003df69f09bb294b4067"
+  },
+  {
+   "id": "dictation_g4",
+   "version": "0",
+   "url": "packs/dictation_g4.jsonl.gz",
+   "sha256": "7f0f279f264eac11269aa2e8f50b95447b119b12bfce178f2bd43b4032f64d25",
+   "size": 7033,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "받아쓰기 4학년",
+   "content_sha256": "dc235b7740d99fec5f80a21e5378aa78d248ee93cacee29510e983b52a282f97"
+  },
+  {
+   "id": "dictation_g5",
+   "version": "0",
+   "url": "packs/dictation_g5.jsonl.gz",
+   "sha256": "27786ba6ac301a1973b331f1ce6a6634aa6acb988e394ac65bc5c639df46e31b",
+   "size": 8903,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "받아쓰기 5학년",
+   "content_sha256": "4a5ef5643a5faaa32db73b01d349d15b4da99cdae29d08f3d50eb5a66871db1c"
+  },
+  {
+   "id": "dictation_g6",
+   "version": "0",
+   "url": "packs/dictation_g6.jsonl.gz",
+   "sha256": "fadc8662a3901f88174d135d6ced12292eb43b51ab11a0543fd0772c5effc718",
+   "size": 9626,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "받아쓰기 6학년",
+   "content_sha256": "ef83ec441509e6307f3125a7e8656902256634aff28a9a9447379b8f3a87d2c5"
+  },
+  {
+   "id": "features",
+   "version": "0",
+   "url": "packs/features.json.gz",
+   "sha256": "8b0b8749aba12de93f3cf5d86f9fac9d6de7cac400a17473718f182a34ebb7e9",
+   "size": 23,
+   "format": "json",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "기능 켜고 끄기",
+   "content_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  {
+   "id": "hanja",
+   "version": "0",
+   "url": "packs/hanja.json.gz",
+   "sha256": "b36c399324c65245abdf2de8c02be1ed43d01892020f545e668b11f6d4df241e",
+   "size": 2352005,
+   "format": "json",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "한자 사전",
+   "content_sha256": "b3adb529189638b88d84d398102a6a923bf5878270aea400e775a426d97ba8a3"
+  },
+  {
+   "id": "hide_examples",
+   "version": "0",
+   "url": "packs/hide_examples.json.gz",
+   "sha256": "0bdd612a93df8ed768dc19b59370eed65ac6d7815f1e8e4999b94631ea3cf41d",
+   "size": 756464,
+   "format": "json",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "가린 예문 목록(감수)",
+   "content_sha256": "785a5760e107fd7b98cd7abd5e152148867b0549eb9ae02733d49b3c3ee4dcdd"
+  },
+  {
+   "id": "motion",
+   "version": "0",
+   "url": "packs/motion.json.gz",
+   "sha256": "3a5b55da9806a3f14f71827635d5dffcb9bb9f3e30519d06f3d741ca76101c19",
+   "size": 3494,
+   "format": "json",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "흉내 말 움직임",
+   "content_sha256": "3405f338e2ba58ce219a162da1d96454c76b739c6e8a007fd98d074243b73fe4"
+  },
+  {
+   "id": "onomatopoeia",
+   "version": "0",
+   "url": "packs/onomatopoeia.jsonl.gz",
+   "sha256": "269922396ff9ffd5f82815a8b986c9b94098c6d1b42dd42496ebfd5003c542dc",
+   "size": 14503,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "흉내 내는 말",
+   "content_sha256": "f16a7aee08702aee2e29ba5199ccc82050966116d03a6a894a0fa3e5aab8dbfe"
+  }
+ ]
+}

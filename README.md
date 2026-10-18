@@ -1,0 +1,83 @@
+# kdict-data — 어린이 국어사전 앱 자료 꾸러미
+
+어린이 국어사전 앱(kdict)이 **하루 한 번 알아서** 이 저장소의 `manifest.json`을 읽고,
+버전이 올라간 자료만 내려받아 바꿉니다. 앱을 새로 만들(빌드할) 필요가 없습니다.
+
+> 이 저장소는 **공개(public)** 저장소여야 합니다. 앱은 로그인 없이
+> `https://raw.githubusercontent.com/kiouvici/kdict-data/main/` 에서 받습니다.
+> 아이 이름·기록 같은 개인 정보는 절대 올리지 마세요.
+
+## 폴더
+
+| 위치 | 내용 |
+|---|---|
+| `src/` | **원본 자료** — 여기만 고치면 됩니다 |
+| `packs/` | 앱이 받는 압축 파일(.gz) — 스크립트가 만듦, 손대지 않기 |
+| `manifest.json` | 꾸러미 목록·버전·검사값 — 스크립트가 만듦 |
+| `packs.json` | (선택) 설명·최소 앱 버전·외부 주소 지정 |
+| `tools/publish_data.py` | 묶기 스크립트 |
+
+## 꾸러미 목록
+
+| id | 파일 | 내용 |
+|---|---|---|
+| `dictation_g1` ~ `dictation_g6` | `src/dictation_gN.jsonl` | 받아쓰기 1~6학년 문장 |
+| `confusables` | `src/confusables.jsonl` | 헷갈리는 말 |
+| `onomatopoeia` | `src/onomatopoeia.jsonl` | 흉내 내는 말 |
+| `motion` | `src/motion.json` | 흉내 내는 말 움직임 |
+| `hanja` | `src/hanja.json` | 한자 사전 (큼, 약 2.3MB 압축) |
+| `hide_examples` | `src/hide_examples.json` | 감수로 가린 예문 목록 |
+| `features` | `src/features.json` | 기능 켜고 끄기 (예: `{"새기능": true}`) |
+
+새 이름의 파일(예: `src/proverbs.jsonl`)을 넣어도 앱이 받아 둡니다. 화면에 쓰려면 앱 쪽 기능이 있어야 합니다.
+
+## 받아쓰기 문제 추가 방법
+
+1. `src/dictation_g2.jsonl`(2학년 예)을 열고 **맨 아래에 한 줄씩** 넣습니다. 한 줄 = 한 문제.
+   ```
+   {"g": 2, "s": "동생과 같이 놀았어요.", "t": ["같이"], "cat": "소리표기"}
+   ```
+   - `g` 학년, `s` 읽어 줄 문장, `t` 채점할 낱말(문장 안에 그대로 있어야 함), `cat` 갈래
+   - 파일은 **UTF-8**로 저장. 줄 끝에 쉼표 넣지 않기.
+2. 묶기:
+   ```
+   python3 tools/publish_data.py .
+   ```
+   바뀐 꾸러미만 버전이 `2026.10.20-1`처럼 오르고, 문법이 틀린 줄이 있으면 몇째 줄인지 알려 주고 멈춥니다.
+3. 올리기:
+   ```
+   git add -A && git commit -m "받아쓰기 2학년 문장 추가" && git push
+   ```
+4. 끝. 아이 휴대폰은 하루 안에 받습니다. 바로 확인하려면 앱 **어른 메뉴 → 자료 업데이트 → 지금 확인**.
+   (GitHub 쪽 캐시 때문에 올린 뒤 5분쯤 걸릴 수 있어요.)
+
+헷갈리는 말·흉내 내는 말도 같은 방법입니다(기존 줄 모양을 그대로 따라 쓰기).
+아이들이 볼 자료이므로 **감수팀 확인을 거친 뒤** 올려 주세요.
+
+## 고치기·되돌리기
+
+- 잘못 올렸으면 `src/` 파일을 고치고 다시 2~3단계. 버전이 또 올라 휴대폰이 새로 받습니다.
+- 앱은 받은 파일의 **크기·SHA-256 검사값**과 **JSON 문법**을 확인한 뒤에만 바꿉니다. 실패하면 지금 자료를 그대로 씁니다.
+- 앱은 바로 앞 버전 하나를 남겨 둡니다.
+
+## 큰 파일 (GitHub Release)
+
+20MB가 넘는 자료는 휴대폰이 **와이파이에서만** 받습니다. 아주 큰 파일은 저장소 대신 Release 자산으로 올리고
+`packs.json`에 주소를 적습니다:
+```json
+{"hanja": {"url": "https://github.com/kiouvici/kdict-data/releases/download/hanja-2026.10/hanja.json.gz"}}
+```
+스크립트가 만든 `packs/hanja.json.gz`를 그 Release에 올리면 됩니다(검사값은 manifest에 들어감).
+
+## 앱 버전 제한
+
+새 자료가 새 앱에서만 돌아가면 `packs.json`에 `"min_app": <앱 versionCode>`를 적습니다.
+그보다 낮은 앱은 그 꾸러미를 받지 않고 "앱 업데이트 필요"로 표시합니다.
+전체를 막으려면 `python3 tools/publish_data.py . --min-app N`.
+
+## 처음 만든 방법 (참고)
+
+```
+python3 tools/publish_data.py . --init-from-app ../kdict
+```
+앱에 든 자료와 같은 첫 꾸러미는 버전 `0`(=앱 기본)이라 휴대폰이 다시 받지 않습니다.
