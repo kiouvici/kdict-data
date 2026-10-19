@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-19T20:03:08+09:00",
+ "generated": "2026-10-19T21:31:52+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -101,15 +101,15 @@
   },
   {
    "id": "hanja",
-   "version": "2026.10.19-3",
+   "version": "2026.10.19-4",
    "url": "packs/hanja.json.gz",
-   "sha256": "3310ed7751a679c8abb1497822d89a33c5abad290aabd85b17e956f3eb3a03db",
-   "size": 2448746,
+   "sha256": "a5b74d5c82c08fee3b28b8b3affad09f312d85b9587e7dee0364b02a8515eda0",
+   "size": 2862510,
    "format": "json",
    "gzip": true,
-   "min_app": 1,
+   "min_app": 15,
    "desc": "한자 사전",
-   "content_sha256": "df087541c26a71f05390098c05759f2d1421c4ab5345cb5efc4dbeefab8fc480"
+   "content_sha256": "1f76b868d13a725bfe40ccfac69a53299ea5e9c5ac4f6ca7fbf45e33f54e71fc"
   },
   {
    "id": "hide_examples",
