@@ -36,6 +36,16 @@
 - `ima` 이 글자 대신 쓸 수 있는 허용 자체(별표2), `imv` 이 글자가 허용 자체인 본 글자
 - 주 2(示변↔礻변, ++변↔卄변은 서로 바꾸어 쓸 수 있음, 예: 福=福, 蘭=蘭)는 같은 부호 안의 글꼴 차이라 글자별 자료로 따로 적지 않음
 
+### 한자 필순 출처(`p`·`ps`)
+
+- `jp` KanjiVG(CC BY-SA 3.0), `kr` 감수팀 확인 우리 자형
+- `ak`·`aj`·`cn` 인명용 새 글자 보충(2026-10): animCJK(https://github.com/parsimonhi/animCJK) graphicsKo/Ja/ZhHant.txt,
+  Make Me a Hanzi(https://github.com/skishore/makemeahanzi) graphics.txt의 중심선(medians)을 109×109 좌표로 바꾼 것.
+  두 자료 모두 Arphic Public License(Arphic PL KaitiM 글꼴 파생)를 따릅니다. 고쳐 쓰거나 다시 나눌 때도 이 라이선스를 지켜 주세요.
+  - `ak` 한국 순서(animCJK Ko), `aj` 일본 순서(animCJK Ja), `cn` 중국 순서(animCJK ZhHant → Make Me a Hanzi 차례로)
+  - `cn` 글자는 앱에서 "중국 자료라 순서가 다를 수 있어요" 안내를 함께 보여 줌
+- `_meta.imsrc` 인명용 한자 출처 문구(앱이 이 값을 읽어 보여 줌, 없으면 앱에 든 기본 문구)
+
 새 이름의 파일(예: `src/proverbs.jsonl`)을 넣어도 앱이 받아 둡니다. 화면에 쓰려면 앱 쪽 기능이 있어야 합니다.
 
 ## 받아쓰기 문제 추가 방법
