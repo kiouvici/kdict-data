@@ -38,10 +38,13 @@
 
 ### 한자 필순 출처(`p`·`ps`)
 
-- `jp` KanjiVG(CC BY-SA 3.0), `kr` 감수팀 확인 우리 자형
+- `jp` KanjiVG(https://kanjivg.tagaini.net, © Ulrich Apel, CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/)
+  획 경로(`<path d>`)를 소수 첫째 자리로 줄여 그대로 씀. `kr`은 KanjiVG를 감수팀이 우리 자형으로 고친 것, `cmp`는 KanjiVG 부품을 이어 만든 어림 필순(앱에서 숨김).
+  고친 것이 있음을 밝히며, 이 필순 자료(`p`)를 고쳐 다시 나눌 때도 CC BY-SA 3.0(출처 표시·같은 조건)으로 나눠야 합니다.
+  - 2026-10 보충: 필순 없던 7자 + animCJK(`aj` 307자·`cn` 2자)였던 글자를 KanjiVG로 바꿈(316자). 우선순위 `ak` > `jp` > `aj` > `cn`(말글사전 자료와 출처가 다른 글자는 儿 1자뿐: 말글은 KanjiVG를 먼저 써서 jp)
 - `ak`·`aj`·`cn` 인명용 새 글자 보충(2026-10): animCJK(https://github.com/parsimonhi/animCJK) graphicsKo/Ja/ZhHant.txt,
   Make Me a Hanzi(https://github.com/skishore/makemeahanzi) graphics.txt의 중심선(medians)을 109×109 좌표로 바꾼 것.
-  두 자료 모두 Arphic Public License(Arphic PL KaitiM 글꼴 파생)를 따릅니다. 고쳐 쓰거나 다시 나눌 때도 이 라이선스를 지켜 주세요.
+  두 자료 모두 Arphic Public License(Arphic PL KaitiM 글꼴 파생)를 따릅니다. 고쳐 쓰거나 다시 나눌 때도 이 라이선스를 지켜 주세요(사본: `licenses/arphic/ARPHICPL.TXT`).
   - `ak` 한국 순서(animCJK Ko), `aj` 일본 순서(animCJK Ja), `cn` 중국 순서(animCJK ZhHant → Make Me a Hanzi 차례로)
   - `cn` 글자는 앱에서 "중국 자료라 순서가 다를 수 있어요" 안내를 함께 보여 줌
 - `_meta.imsrc` 인명용 한자 출처 문구(앱이 이 값을 읽어 보여 줌, 없으면 앱에 든 기본 문구)
