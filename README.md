@@ -27,7 +27,8 @@
 | `motion` | `src/motion.json` | 흉내 내는 말 움직임 |
 | `hanja` | `src/hanja.json` | 한자 사전 (큼, 약 2.3MB 압축) |
 | `hide_examples` | `src/hide_examples.json` | 감수로 가린 예문 목록 |
-| `kid_block` | `src/kid_block.json` | 아이에게 앱이 먼저 내지 않을 말(술·담배·도박·연애·직장 생활어). 보호 모드에서 오늘의 낱말·퀴즈 보충 낱말·끝말잇기 앱 낱말·힌트에만 적용, 검색은 막지 않음. `words`=표제어 정확히 일치, `defs`=뜻풀이 정규식 |
+| `kid_block` | `src/kid_block.json` | 아이에게 앱이 먼저 내지 않을 말(술·담배·도박·연애·직장 생활어). 보호 모드에서 오늘의 낱말·퀴즈 보충 낱말·끝말잇기 앱 낱말·힌트에만 적용, 검색은 막지 않음. `words`=표제어 정확히 일치, `defs`=뜻풀이 정규식, `allow`=뜻풀이 규칙에서 빼 줄 낱말(주전자) |
+| `vocab_g1` ~ `vocab_g6` | `src/vocab_gN.jsonl` | 학년 필수 낱말(학년당 309~375개). 한 줄 = `{"w","pos","code"(표준사전 낱말 번호, 교과 용어는 없음),"t"(주제),"src"(근거),"d"(아이용 쉬운 뜻),"ex"(쉬운 예문),"f"(예문 속 모양)}`. 오늘의 공부·문맥으로 뜻 짐작·낱말 친구들에 씀. 보호 모드에서 kid_block에 걸리는 줄은 앱이 뺌 |
 | `features` | `src/features.json` | 기능 켜고 끄기 (예: `{"새기능": true}`) |
 
 ### 한자 사전의 인명용 표시(`im`·`imr`·`ima`·`imv`)
