@@ -17,11 +17,11 @@ APP_ASSETS = {
     'dictation_g1': 'play/dictation_g1.jsonl', 'dictation_g2': 'play/dictation_g2.jsonl', 'dictation_g3': 'play/dictation_g3.jsonl',
     'dictation_g4': 'play/dictation_g4.jsonl', 'dictation_g5': 'play/dictation_g5.jsonl', 'dictation_g6': 'play/dictation_g6.jsonl',
     'confusables': 'play/confusables.jsonl', 'onomatopoeia': 'play/onomatopoeia.jsonl', 'motion': 'play/motion.json',
-    'hanja': 'hanja/hanja.json', 'hide_examples': 'hide/hide_examples.json',
+    'hanja': 'hanja/hanja.json', 'hide_examples': 'hide/hide_examples.json', 'kid_block': 'hide/kid_block.json',
 }
 DESC = {'dictation_g%d' % g: '받아쓰기 %d학년' % g for g in range(1, 7)}
 DESC.update(confusables='헷갈리는 말', onomatopoeia='흉내 내는 말', motion='흉내 말 움직임', hanja='한자 사전',
-            hide_examples='가린 예문 목록(감수)', features='기능 켜고 끄기')
+            hide_examples='가린 예문 목록(감수)', kid_block='아이에게 먼저 내지 않을 말(주제 차단)', features='기능 켜고 끄기')
 
 
 def check(path, fmt):

@@ -27,6 +27,7 @@
 | `motion` | `src/motion.json` | 흉내 내는 말 움직임 |
 | `hanja` | `src/hanja.json` | 한자 사전 (큼, 약 2.3MB 압축) |
 | `hide_examples` | `src/hide_examples.json` | 감수로 가린 예문 목록 |
+| `kid_block` | `src/kid_block.json` | 아이에게 앱이 먼저 내지 않을 말(술·담배·도박·연애·직장 생활어). 보호 모드에서 오늘의 낱말·퀴즈 보충 낱말·끝말잇기 앱 낱말·힌트에만 적용, 검색은 막지 않음. `words`=표제어 정확히 일치, `defs`=뜻풀이 정규식 |
 | `features` | `src/features.json` | 기능 켜고 끄기 (예: `{"새기능": true}`) |
 
 ### 한자 사전의 인명용 표시(`im`·`imr`·`ima`·`imv`)
