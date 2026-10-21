@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-19T21:31:52+09:00",
+ "generated": "2026-10-22T04:36:46+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -124,6 +124,18 @@
    "content_sha256": "785a5760e107fd7b98cd7abd5e152148867b0549eb9ae02733d49b3c3ee4dcdd"
   },
   {
+   "id": "kid_block",
+   "version": "2026.10.22-1",
+   "url": "packs/kid_block.json.gz",
+   "sha256": "d7c30d483a470d542fab4537a1faaa3a58be429110c153c112371dc3a4d16207",
+   "size": 1033,
+   "format": "json",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "아이에게 먼저 내지 않을 말(주제 차단)",
+   "content_sha256": "6becffc5fb088fa552689216aaee010aa55238db34d89cf0e9d9a19e6dd1f1ca"
+  },
+  {
    "id": "motion",
    "version": "0",
    "url": "packs/motion.json.gz",
@@ -146,6 +158,78 @@
    "min_app": 1,
    "desc": "흉내 내는 말",
    "content_sha256": "f16a7aee08702aee2e29ba5199ccc82050966116d03a6a894a0fa3e5aab8dbfe"
+  },
+  {
+   "id": "vocab_g1",
+   "version": "2026.10.22-1",
+   "url": "packs/vocab_g1.jsonl.gz",
+   "sha256": "81b0c5b8f90cef5a7d525213d8ea11f6ba2f1349bb4bdfa20ec9b15c5288930d",
+   "size": 17096,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "학년 낱말 1학년",
+   "content_sha256": "8ccbf9f2016979430ba223fa88f7c7341fc3be2307f18b574703de80ea686e83"
+  },
+  {
+   "id": "vocab_g2",
+   "version": "2026.10.22-1",
+   "url": "packs/vocab_g2.jsonl.gz",
+   "sha256": "b88b94b96d1495e9e552107570979c6903f6208f5f805d6091b5f66964634c56",
+   "size": 15415,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "학년 낱말 2학년",
+   "content_sha256": "4c75981e27a979a8b0095d2cf11b77f9e9459545bc53b059bb0611ab89078ad3"
+  },
+  {
+   "id": "vocab_g3",
+   "version": "2026.10.22-1",
+   "url": "packs/vocab_g3.jsonl.gz",
+   "sha256": "2b3eafc3e92e51993e682aeca288723d39ca420794bc833c66731d3cff73546b",
+   "size": 15402,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "학년 낱말 3학년",
+   "content_sha256": "34b59b13928185406f69857c17077650e86a78e48eb86e3812eacdf08c8ef3fc"
+  },
+  {
+   "id": "vocab_g4",
+   "version": "2026.10.22-1",
+   "url": "packs/vocab_g4.jsonl.gz",
+   "sha256": "0fa4d6ffa52e161090861b7158cc76aa207ac7f05ff4cbb04fa21c2d0f467baf",
+   "size": 15155,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "학년 낱말 4학년",
+   "content_sha256": "e1380adb781f29d9a6ac977ed3c0db21e46401f25bfcd5354db0e712d86a8ea6"
+  },
+  {
+   "id": "vocab_g5",
+   "version": "2026.10.22-1",
+   "url": "packs/vocab_g5.jsonl.gz",
+   "sha256": "2ecb612d894ee54b55c7bc0cb9543556479c637f95aef7bd6108ee032ded615e",
+   "size": 14992,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "학년 낱말 5학년",
+   "content_sha256": "7abfe258ade241c5af2ba35e74861e1c0313aa0ac9840537790c91c2646491f6"
+  },
+  {
+   "id": "vocab_g6",
+   "version": "2026.10.22-1",
+   "url": "packs/vocab_g6.jsonl.gz",
+   "sha256": "a7b2564eb026d811f8f785edcff1a4e2908f9334949cf834969db0394b659b76",
+   "size": 14966,
+   "format": "jsonl",
+   "gzip": true,
+   "min_app": 1,
+   "desc": "학년 낱말 6학년",
+   "content_sha256": "4143ecd25e9a1844cdfa53238bcd0fe33cacef7cfc4fbb2bb18f2c07da525a81"
   }
  ]
 }
