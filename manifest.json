@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-22T16:46:58+09:00",
+ "generated": "2026-10-23T06:07:51+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -101,39 +101,39 @@
   },
   {
    "id": "hanja",
-   "version": "2026.10.22-1",
+   "version": "2026.10.23-1",
    "url": "packs/hanja.json.gz",
-   "sha256": "b4e1e6390d83506648db733b52213b460068a491ceae3ff2c1d9cd304327e658",
-   "size": 2863746,
+   "sha256": "189e6b1bdd381bb56b6eeb47fd2ccd2cc37bd0ebb4b1aed03f41e059a18928d7",
+   "size": 3577648,
    "format": "json",
    "gzip": true,
    "min_app": 15,
    "desc": "한자 사전",
-   "content_sha256": "3d8b2646870633308ea31b295539bb9c701b7bf459f031a1beacf251e39d415c"
+   "content_sha256": "41ae29af4acabac76b886196e2c2f95fdc20366280f85f39c734d423d604da24"
   },
   {
    "id": "hide_examples",
-   "version": "0",
+   "version": "2026.10.23-1",
    "url": "packs/hide_examples.json.gz",
-   "sha256": "0bdd612a93df8ed768dc19b59370eed65ac6d7815f1e8e4999b94631ea3cf41d",
-   "size": 756464,
+   "sha256": "d0714ce03af2b20d3e44e333db4e7879def3e5903215599f866f5a799d9b2baa",
+   "size": 768416,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "가린 예문 목록(감수)",
-   "content_sha256": "785a5760e107fd7b98cd7abd5e152148867b0549eb9ae02733d49b3c3ee4dcdd"
+   "content_sha256": "8b5cb2031523247969c001e71a88966e70280115c3c4d8c2ab0e27736b941afe"
   },
   {
    "id": "kid_block",
-   "version": "2026.10.22-2",
+   "version": "2026.10.23-1",
    "url": "packs/kid_block.json.gz",
-   "sha256": "c14ff8c2b51c5df83156304304a4c67bc4f3140672524a6c56425f15ed25b5f5",
-   "size": 6793,
+   "sha256": "d216060dcab73651dfad855d0be9797f6d63fac6ab852d27412dcb98444b4718",
+   "size": 17604,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "아이에게 먼저 내지 않을 말(주제 차단)",
-   "content_sha256": "1b1fb6a3b3cb6284a0bcf9aae9d3463874c28614cffd981bbb2b9f7b07bcd5f5"
+   "content_sha256": "f037273530095bacf15c38c2c35cf63421bb0ddeb5fb15ce03ae441f9268786b"
   },
   {
    "id": "motion",
