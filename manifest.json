@@ -1,31 +1,31 @@
 {
  "schema": 1,
- "generated": "2026-10-22T04:36:46+09:00",
+ "generated": "2026-10-22T16:46:58+09:00",
  "min_app": 1,
  "packs": [
   {
    "id": "confusables",
-   "version": "2026.10.19-1",
+   "version": "2026.10.22-1",
    "url": "packs/confusables.jsonl.gz",
-   "sha256": "198c50436f4871fb744b5dac8f562c9d8e64045eb863d867fae1af46110c1d3d",
-   "size": 24457,
+   "sha256": "6a087e913968226a83cd59d57ad71b8aa056c41f359ee0a8ac2912505e706a94",
+   "size": 24458,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "헷갈리는 말",
-   "content_sha256": "f8adbc85aa9d66592cacf2924469818bcf4f10aaef84fc78d53f5e2e89d1ce12"
+   "content_sha256": "e5a0b7cd81b8f8770a5fc5a49f9a22ea036affd8c0af59ae76481fb0c1db5024"
   },
   {
    "id": "dictation_g1",
-   "version": "2026.10.19-1",
+   "version": "2026.10.22-1",
    "url": "packs/dictation_g1.jsonl.gz",
-   "sha256": "4683abf9122ddb78bbeb723e0ecedc581200a6dca3fc92ec55ef934acea359af",
-   "size": 4737,
+   "sha256": "686bb4c27ea23924c3ad8f61c1ce810ae0f77f21c17130f2dfacef5a9b77ff5d",
+   "size": 4730,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 1학년",
-   "content_sha256": "153873a993b06087d3b87721e6fc92754411ab514955a723f91c73ced3081894"
+   "content_sha256": "a910b794d5d24735e7fd3d346da777545b84f66dded8ba29d72b788045f3811a"
   },
   {
    "id": "dictation_g2",
@@ -41,27 +41,27 @@
   },
   {
    "id": "dictation_g3",
-   "version": "2026.10.19-1",
+   "version": "2026.10.22-1",
    "url": "packs/dictation_g3.jsonl.gz",
-   "sha256": "9782c9e2524cc2d275c05a8e757ad2528bc83430648fa349e21e577f800fd873",
-   "size": 7444,
+   "sha256": "c7e8dfe8738e6459a6fd7750d7e6b1ab81934e4229ccc184939f12a0c0ccd6c0",
+   "size": 7452,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 3학년",
-   "content_sha256": "b1ea7cdab11a64893f08c782a3708ec8d8ea28046f6b9fed95e9afaeae7e57fe"
+   "content_sha256": "f53b26a663b4d53c6ed5aebf5c62ffbe75280502658db4cd6fc2a6af6db45856"
   },
   {
    "id": "dictation_g4",
-   "version": "2026.10.19-1",
+   "version": "2026.10.22-1",
    "url": "packs/dictation_g4.jsonl.gz",
-   "sha256": "c789aa15219e4b192f7acec6109a02010f3e5d6d87548c11309bc0de436c30a1",
-   "size": 7314,
+   "sha256": "be252c9cac89607cfa56ffe7b07e22bfe4830f7fb09c2e3104eadea8a551b35a",
+   "size": 7311,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 4학년",
-   "content_sha256": "1154206c134e89b55cf4321ca4af117bb1758e19ba1b532ef56ccc4c4c823d7b"
+   "content_sha256": "e17946909473528cce2b772f9ec6821206c42d770fa5d6397afff1215a5d3570"
   },
   {
    "id": "dictation_g5",
@@ -77,15 +77,15 @@
   },
   {
    "id": "dictation_g6",
-   "version": "2026.10.19-1",
+   "version": "2026.10.22-1",
    "url": "packs/dictation_g6.jsonl.gz",
-   "sha256": "7f1e75236dc71eca9c3d1600ec901d58b0986c009f53f14f115be6d5655c7e46",
-   "size": 9814,
+   "sha256": "f46348990de192be8a6dee61a1acfab01a220a1cd62b078fd4fffa02d9c69d3c",
+   "size": 9811,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "받아쓰기 6학년",
-   "content_sha256": "4a56a3569c23cf0916fa33f5cc13462f2324f19c9986a5897f751809b46a15e2"
+   "content_sha256": "a70c87bf2f0537e2c1f288b420d17111354ba913ce072c2c8ae89e0e85647e0a"
   },
   {
    "id": "features",
@@ -101,15 +101,15 @@
   },
   {
    "id": "hanja",
-   "version": "2026.10.19-4",
+   "version": "2026.10.22-1",
    "url": "packs/hanja.json.gz",
-   "sha256": "a5b74d5c82c08fee3b28b8b3affad09f312d85b9587e7dee0364b02a8515eda0",
-   "size": 2862510,
+   "sha256": "b4e1e6390d83506648db733b52213b460068a491ceae3ff2c1d9cd304327e658",
+   "size": 2863746,
    "format": "json",
    "gzip": true,
    "min_app": 15,
    "desc": "한자 사전",
-   "content_sha256": "1f76b868d13a725bfe40ccfac69a53299ea5e9c5ac4f6ca7fbf45e33f54e71fc"
+   "content_sha256": "3d8b2646870633308ea31b295539bb9c701b7bf459f031a1beacf251e39d415c"
   },
   {
    "id": "hide_examples",
@@ -125,111 +125,111 @@
   },
   {
    "id": "kid_block",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/kid_block.json.gz",
-   "sha256": "d7c30d483a470d542fab4537a1faaa3a58be429110c153c112371dc3a4d16207",
-   "size": 1033,
+   "sha256": "c14ff8c2b51c5df83156304304a4c67bc4f3140672524a6c56425f15ed25b5f5",
+   "size": 6793,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "아이에게 먼저 내지 않을 말(주제 차단)",
-   "content_sha256": "6becffc5fb088fa552689216aaee010aa55238db34d89cf0e9d9a19e6dd1f1ca"
+   "content_sha256": "1b1fb6a3b3cb6284a0bcf9aae9d3463874c28614cffd981bbb2b9f7b07bcd5f5"
   },
   {
    "id": "motion",
-   "version": "0",
+   "version": "2026.10.22-1",
    "url": "packs/motion.json.gz",
-   "sha256": "3a5b55da9806a3f14f71827635d5dffcb9bb9f3e30519d06f3d741ca76101c19",
+   "sha256": "1094ddd8573334077c577bec11dc6caa5fea9bb1b6a2e8ee7ed0353534672ebd",
    "size": 3494,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "흉내 말 움직임",
-   "content_sha256": "3405f338e2ba58ce219a162da1d96454c76b739c6e8a007fd98d074243b73fe4"
+   "content_sha256": "6502f3432989cb17618a0bf190907f371e4f1e1d5bae742f76654f08430762d6"
   },
   {
    "id": "onomatopoeia",
-   "version": "0",
+   "version": "2026.10.22-1",
    "url": "packs/onomatopoeia.jsonl.gz",
-   "sha256": "269922396ff9ffd5f82815a8b986c9b94098c6d1b42dd42496ebfd5003c542dc",
-   "size": 14503,
+   "sha256": "c159d7f0f51fe381575ccf1e04e4944aeb027a88eaa242922e9065f40fe6703f",
+   "size": 14508,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "흉내 내는 말",
-   "content_sha256": "f16a7aee08702aee2e29ba5199ccc82050966116d03a6a894a0fa3e5aab8dbfe"
+   "content_sha256": "8b59679fd606d3d51aa9cc2e569ea0c4f2acd93219db9f1e4f5155167b44a2da"
   },
   {
    "id": "vocab_g1",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/vocab_g1.jsonl.gz",
-   "sha256": "81b0c5b8f90cef5a7d525213d8ea11f6ba2f1349bb4bdfa20ec9b15c5288930d",
-   "size": 17096,
+   "sha256": "9a798e5a45f3655f4d10326b5780a589a46177f1f4fa4e2e70e6df8047193040",
+   "size": 17064,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 1학년",
-   "content_sha256": "8ccbf9f2016979430ba223fa88f7c7341fc3be2307f18b574703de80ea686e83"
+   "content_sha256": "eac98db7d798700c73747cf90179f13259286268bb07f5708151e2b426f09606"
   },
   {
    "id": "vocab_g2",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/vocab_g2.jsonl.gz",
-   "sha256": "b88b94b96d1495e9e552107570979c6903f6208f5f805d6091b5f66964634c56",
-   "size": 15415,
+   "sha256": "7a58bab644ddb649eb4ff55e44e9639fa368fe2ead61248a3200c7594437e1f4",
+   "size": 15502,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 2학년",
-   "content_sha256": "4c75981e27a979a8b0095d2cf11b77f9e9459545bc53b059bb0611ab89078ad3"
+   "content_sha256": "624e36e9bc042f29aeafbe99e74dced981846946eef6cd48eb25579e897f801d"
   },
   {
    "id": "vocab_g3",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/vocab_g3.jsonl.gz",
-   "sha256": "2b3eafc3e92e51993e682aeca288723d39ca420794bc833c66731d3cff73546b",
-   "size": 15402,
+   "sha256": "96b318401d009cf810d6cbf4841364c57ee97e22842e2a309118917035864b50",
+   "size": 15559,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 3학년",
-   "content_sha256": "34b59b13928185406f69857c17077650e86a78e48eb86e3812eacdf08c8ef3fc"
+   "content_sha256": "fb069dcb923412d0ff6678741440246f39da0de314421fb7f5a3f50f031c21b6"
   },
   {
    "id": "vocab_g4",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/vocab_g4.jsonl.gz",
-   "sha256": "0fa4d6ffa52e161090861b7158cc76aa207ac7f05ff4cbb04fa21c2d0f467baf",
-   "size": 15155,
+   "sha256": "806b0078a63bfce8d46d5f1e03a4d91e7483c33f24541121851f56cb69112da6",
+   "size": 15351,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 4학년",
-   "content_sha256": "e1380adb781f29d9a6ac977ed3c0db21e46401f25bfcd5354db0e712d86a8ea6"
+   "content_sha256": "8557e6c060b452ed10deb7638c56a301ec5da04e049036a207b79488e141a485"
   },
   {
    "id": "vocab_g5",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/vocab_g5.jsonl.gz",
-   "sha256": "2ecb612d894ee54b55c7bc0cb9543556479c637f95aef7bd6108ee032ded615e",
-   "size": 14992,
+   "sha256": "35901b7c6ca7087d5a3a230a4bb3f2b40299c1e3fcdea44e4e29749f38be7ad1",
+   "size": 15206,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 5학년",
-   "content_sha256": "7abfe258ade241c5af2ba35e74861e1c0313aa0ac9840537790c91c2646491f6"
+   "content_sha256": "d13b1fc3dd040914102c5f862a969b9847f2aa328d2517e70a258f7eead0c148"
   },
   {
    "id": "vocab_g6",
-   "version": "2026.10.22-1",
+   "version": "2026.10.22-2",
    "url": "packs/vocab_g6.jsonl.gz",
-   "sha256": "a7b2564eb026d811f8f785edcff1a4e2908f9334949cf834969db0394b659b76",
-   "size": 14966,
+   "sha256": "62eb6e4f53a61b3521fd69edee7a9c4704520f07b747092fd8f632928fb1c299",
+   "size": 15187,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 6학년",
-   "content_sha256": "4143ecd25e9a1844cdfa53238bcd0fe33cacef7cfc4fbb2bb18f2c07da525a81"
+   "content_sha256": "21a255809d313967b2e95d28df0c8f19645df18e14163e887ef44c0e0f6502b4"
   }
  ]
 }
