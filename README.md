@@ -38,17 +38,24 @@
 - `ima` 이 글자 대신 쓸 수 있는 허용 자체(별표2), `imv` 이 글자가 허용 자체인 본 글자
 - 주 2(示변↔礻변, "++"변↔"十十"변은 서로 바꾸어 쓸 수 있음, 예: 福=福, 蘭=蘭)는 같은 부호 안의 글꼴 차이라 글자별 자료로 따로 적지 않음
 
-### 한자 필순 출처(`p`·`ps`)
+### 한자 필순 출처(`p`·`ps`·`od`)
+
+필순은 **일본식(KanjiVG) 순서**를 기준으로 하며, 말글사전(malgeul) `src/hanja.json`과 `p`·`ps`·`od` 값이 모든 글자에서 같은 공통 자료입니다(2026-10 통일).
+한 글자에 자료가 여럿이면 `jp` > `kr` > `aj` > `cmp` 순서로 하나만 씁니다. 한국 순서(animCJK Ko)·중국 순서(animCJK ZhHant, Make Me a Hanzi)는 쓰지 않습니다.
 
 - `jp` KanjiVG(https://kanjivg.tagaini.net, © Ulrich Apel, CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/)
-  획 경로(`<path d>`)를 소수 첫째 자리로 줄여 그대로 씀. `kr`은 KanjiVG를 감수팀이 우리 자형으로 고친 것, `cmp`는 KanjiVG 부품을 이어 만든 어림 필순(앱에서 숨김).
-  고친 것이 있음을 밝히며, 이 필순 자료(`p`)를 고쳐 다시 나눌 때도 CC BY-SA 3.0(출처 표시·같은 조건)으로 나눠야 합니다.
-  - 2026-10 보충: 필순 없던 7자 + animCJK(`aj` 307자·`cn` 2자)였던 글자를 KanjiVG로 바꿈(316자). 우선순위 `ak` > `jp` > `aj` > `cn`(말글사전 보충 스크립트는 jp를 ak보다 먼저 써서, 두 자료가 모두 있는 儿 1자만 말글은 jp)
-- `ak`·`aj`·`cn` 인명용 새 글자 보충(2026-10): animCJK(https://github.com/parsimonhi/animCJK) graphicsKo/Ja/ZhHant.txt,
-  Make Me a Hanzi(https://github.com/skishore/makemeahanzi) graphics.txt의 중심선(medians)을 109×109 좌표로 바꾼 것.
-  두 자료 모두 Arphic Public License(Arphic PL KaitiM 글꼴 파생)를 따릅니다. 고쳐 쓰거나 다시 나눌 때도 이 라이선스를 지켜 주세요(사본: `licenses/arphic/ARPHICPL.TXT`).
-  - `ak` 한국 순서(animCJK Ko), `aj` 일본 순서(animCJK Ja), `cn` 중국 순서(animCJK ZhHant → Make Me a Hanzi 차례로)
-  - `cn` 글자는 앱에서 "중국 자료라 순서가 다를 수 있어요" 안내를 함께 보여 줌
+  획 경로(`<path d>`)를 소수 첫째 자리로 줄여 그대로 씀.
+- `kr` KanjiVG를 감수팀이 우리 자형으로 고친 것(순서는 일본식). CC BY-SA 3.0.
+- `aj` animCJK(https://github.com/parsimonhi/animCJK) graphicsJa.txt(일본 순서)의 중심선(medians)을 109×109 좌표로 바꾼 것.
+  Arphic Public License(Arphic PL KaitiM 글꼴 파생)를 따릅니다. 고쳐 쓰거나 다시 나눌 때도 이 라이선스를 지켜 주세요(사본: `licenses/arphic/ARPHICPL.TXT`).
+- `cmp` KanjiVG에 없는 글자를 KanjiVG 부품(구성 요소별 획 경로)으로 이어 그린 것. 부품 분해는 KanjiVG 자체 구성 정보와 IDS(cjkvi-ids, CHISE 기반)를 쓰고,
+  일본식 필순 규칙(왼쪽→오른쪽, 위→아래, 바깥→안, 囗는 마지막 획을 안 다음에, 辶·廴는 안 먼저 등)으로 순서를 정함. CC BY-SA 3.0.
+  - 다음 22자는 예전 보충 때 부품 일부를 Make Me a Hanzi 중심선(Arphic Public License)으로 채운 것이 남아 있음: 亹俁刁奭巿彘彧橐毌爟瓘秭稶笫纍芾褰襫鈺鼉𥸴𦂈
+  - KanjiVG 부품으로 만들 수 없어 필순이 없는 글자(15자): 沔玈疈舃舝褎覶豋𩑠燛橆縃𦁗枾𰜩
+- `od: 1` 나라마다 순서가 다를 수 있는 글자(`aj`·`cmp` 전부, `jp` 중 일부). 앱이 "나라마다 순서가 달라요" 안내를 보여 줌.
+- `pv: 1` 감수 확인 표시. 아이앱은 `cmp`를 `pv: 1`일 때만 보여 줌(감수 전이라 지금은 없음).
+- 총획(`s`)과 획 수가 다르면(일본 자형: 艹 3획, 飠 8획 등) 앱이 "획수 다름" 안내를 함께 보여 줌.
+- KanjiVG에서 온 필순 자료(`jp`·`kr`·`cmp`)를 고쳐 다시 나눌 때도 CC BY-SA 3.0(출처 표시·같은 조건)으로 나눠야 합니다.
 - `_meta.imsrc` 인명용 한자 출처 문구(앱이 이 값을 읽어 보여 줌, 없으면 앱에 든 기본 문구)
 
 새 이름의 파일(예: `src/proverbs.jsonl`)을 넣어도 앱이 받아 둡니다. 화면에 쓰려면 앱 쪽 기능이 있어야 합니다.
