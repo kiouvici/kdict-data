@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-23T06:07:51+09:00",
+ "generated": "2026-10-23T06:45:40+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -113,27 +113,27 @@
   },
   {
    "id": "hide_examples",
-   "version": "2026.10.23-1",
+   "version": "2026.10.23-2",
    "url": "packs/hide_examples.json.gz",
-   "sha256": "d0714ce03af2b20d3e44e333db4e7879def3e5903215599f866f5a799d9b2baa",
-   "size": 768416,
+   "sha256": "ccdfa534940b5ca817929e2dba0b0ec77e3639513e586017a3c9351a5e2eb64f",
+   "size": 768448,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "가린 예문 목록(감수)",
-   "content_sha256": "8b5cb2031523247969c001e71a88966e70280115c3c4d8c2ab0e27736b941afe"
+   "content_sha256": "1f04044830acaf4688bd21f9de3f4af5161676307cfec0b21b33944e95dec35d"
   },
   {
    "id": "kid_block",
-   "version": "2026.10.23-1",
+   "version": "2026.10.23-2",
    "url": "packs/kid_block.json.gz",
-   "sha256": "d216060dcab73651dfad855d0be9797f6d63fac6ab852d27412dcb98444b4718",
-   "size": 17604,
+   "sha256": "56bbe1b7681f2b229dad3b244cc87d521f99b1197212647a11775d6df3809a65",
+   "size": 17953,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "아이에게 먼저 내지 않을 말(주제 차단)",
-   "content_sha256": "f037273530095bacf15c38c2c35cf63421bb0ddeb5fb15ce03ae441f9268786b"
+   "content_sha256": "c6bf505e887ff54bfd20ec670a83f7138638d1724c9d15f2469a2a12966c9417"
   },
   {
    "id": "motion",
