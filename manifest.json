@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-23T06:45:40+09:00",
+ "generated": "2026-10-23T13:07:43+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -125,15 +125,15 @@
   },
   {
    "id": "kid_block",
-   "version": "2026.10.23-2",
+   "version": "2026.10.23-3",
    "url": "packs/kid_block.json.gz",
-   "sha256": "56bbe1b7681f2b229dad3b244cc87d521f99b1197212647a11775d6df3809a65",
-   "size": 17953,
+   "sha256": "04d054d35a7fe8bd65a9bf5a47c668417f7a0178d863533e2b61aa154cef0c28",
+   "size": 18512,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "아이에게 먼저 내지 않을 말(주제 차단)",
-   "content_sha256": "c6bf505e887ff54bfd20ec670a83f7138638d1724c9d15f2469a2a12966c9417"
+   "content_sha256": "f8dd7240563480c774745ece67ba06b237597c6beb845bcc4deae030b4f03dc4"
   },
   {
    "id": "motion",
