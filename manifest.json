@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-24T20:59:20+09:00",
+ "generated": "2026-10-25T00:54:09+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -113,15 +113,15 @@
   },
   {
    "id": "hide_examples",
-   "version": "2026.10.24-2",
+   "version": "2026.10.25-1",
    "url": "packs/hide_examples.json.gz",
-   "sha256": "8511b6cb7a936f127a13a76fa08a2d27b236c523e10aa310fafdcb48bfe70855",
-   "size": 774035,
+   "sha256": "79020c1b6bc4dc3f52c3c81cb8444497d6e09a93c1acb278ad5e147ef5d609aa",
+   "size": 774235,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "가린 예문 목록(감수)",
-   "content_sha256": "e7562cbba458cbbb1dfeda0ba440ec80aef46dd401a91d9de1c9beed7af29e94"
+   "content_sha256": "efe8c8d9bb9f2f66d1186aa73bff59d24e6cb707c2fcebd61d7026c6ee85a89c"
   },
   {
    "id": "kid_block",
