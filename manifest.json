@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-24T18:04:18+09:00",
+ "generated": "2026-10-24T20:59:20+09:00",
  "min_app": 1,
  "packs": [
   {
@@ -113,27 +113,27 @@
   },
   {
    "id": "hide_examples",
-   "version": "2026.10.24-1",
+   "version": "2026.10.24-2",
    "url": "packs/hide_examples.json.gz",
-   "sha256": "557b684b0285d1f7bf026815732133dc34576214da9d59ee7302641367c993b6",
-   "size": 773957,
+   "sha256": "8511b6cb7a936f127a13a76fa08a2d27b236c523e10aa310fafdcb48bfe70855",
+   "size": 774035,
    "format": "json",
    "gzip": true,
    "min_app": 1,
    "desc": "가린 예문 목록(감수)",
-   "content_sha256": "b0ab4036dc2c4998fbf9ad7c4ce83a291f85e474ce93f036573848f0e49fc819"
+   "content_sha256": "e7562cbba458cbbb1dfeda0ba440ec80aef46dd401a91d9de1c9beed7af29e94"
   },
   {
    "id": "kid_block",
-   "version": "2026.10.24-1",
+   "version": "2026.10.24-2",
    "url": "packs/kid_block.json.gz",
-   "sha256": "f8ef3c4d2010ffb06540764da00a39d5ac2a6f46c030f78a440e0c6fb132b4fa",
-   "size": 20881,
+   "sha256": "8dd15756259333d8516fcb2acbea5bd92e40cd9732a16ed02164a64bc939a1ad",
+   "size": 22317,
    "format": "json",
    "gzip": true,
-   "min_app": 1,
+   "min_app": 31,
    "desc": "아이에게 먼저 내지 않을 말(주제 차단)",
-   "content_sha256": "8be0971b94c934f86c8688f6356a5c62d0de742a38f3ea4fa5ad0092e73efe2a"
+   "content_sha256": "e000794befa3e8316a0d482fab3225eebff85112e291cf359f64ebb6e4b6f06e"
   },
   {
    "id": "motion",
@@ -161,15 +161,15 @@
   },
   {
    "id": "vocab_g1",
-   "version": "2026.10.22-2",
+   "version": "2026.10.24-1",
    "url": "packs/vocab_g1.jsonl.gz",
-   "sha256": "9a798e5a45f3655f4d10326b5780a589a46177f1f4fa4e2e70e6df8047193040",
-   "size": 17064,
+   "sha256": "6f3406baa25882ad9a4aacf941e7e8d645705aeef8d043b69e2c529ff841cb18",
+   "size": 17161,
    "format": "jsonl",
    "gzip": true,
    "min_app": 1,
    "desc": "학년 낱말 1학년",
-   "content_sha256": "eac98db7d798700c73747cf90179f13259286268bb07f5708151e2b426f09606"
+   "content_sha256": "561b7d48d4bde2390b4f29a694854677c262dd5bc911627f9dd43e290e82d755"
   },
   {
    "id": "vocab_g2",
